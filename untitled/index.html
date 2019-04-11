@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+    <link rel="stylesheet">
+    <script src="jquery.js"></script>
+    <style>
+        .container {
+            display: none;
+            width: 400px;
+            position: fixed;
+            right: 10px;
+            top: 10px;
+
+            <script src="jquery.js"></script>
+            padding: 15px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            background: white;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Tahoma;
+        }
+        .content {
+            margin-top: 10px;
+            font-family: "Book Antiqua";
+        }
+        .close {
+            float: right;
+            cursor: pointer;
+        } .btn {
+            display: inline-block;
+            padding: 15px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            background: green;
+                      border: 1px solid #33be4b;
+            color: #ffffff;
+            cursor: pointer;
+            -webkit-transition: background 200ms;
+            -moz-transition: background 200ms;
+            -ms-transition: background 200ms;
+            -o-transition: background 200ms;
+            transition: background 200ms;
+                  }
+        .btn:hover {
+            background: #001a00;
+        }
+        .btn:active {
+            background: #473070;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('#sendMessage').click(function () {
+                $('.container').fadeIn(300);
+            });
+            $(".close").click(function () {
+                $('.container').fadeOut(300);
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="btn" id="sendMessage">Отправить</div>
+<div class="container">
+    <div class="close" onclick="$('.container').fadeOut(200);">X</div>
+    <div class="title">Заголовок блока</div>
+    <div class="content">yhhfbfbfnf</div>
+</body>
+</html>
+
